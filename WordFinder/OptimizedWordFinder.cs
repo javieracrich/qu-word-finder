@@ -4,12 +4,18 @@ using System.Text;
 
 namespace qu_word_finder;
 
-public sealed class OptimizedWordFinder(IEnumerable<string> matrix)
+public sealed class OptimizedWordFinder
 {
-    private readonly IEnumerable<string> matrix = matrix;
+    private readonly IEnumerable<string> matrix;
+    public OptimizedWordFinder(IEnumerable<string> matrix)
+    {
+        ArgumentNullException.ThrowIfNull(matrix);
+        this.matrix = matrix;
+    }
 
     public IEnumerable<string> Find(IEnumerable<string> wordstream)
     {
+        ArgumentNullException.ThrowIfNull(wordstream);
         var wordCount = new Dictionary<string, int>();
         var matrixList = this.matrix.ToList();
         var matrixCount = matrixList.Count;

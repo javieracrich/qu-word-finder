@@ -1,11 +1,18 @@
 ﻿namespace qu_word_finder;
 
-public class WordFinder(IEnumerable<string> matrix)
+public class WordFinder
 {
-    private readonly IEnumerable<string> matrix = matrix;
+    private readonly IEnumerable<string> matrix ;
+    public WordFinder(IEnumerable<string> matrix)
+    {
+        ArgumentNullException.ThrowIfNull(matrix);
+        this.matrix = matrix;
+    }
 
     public IEnumerable<string> Find(IEnumerable<string> wordstream)
     {
+        ArgumentNullException.ThrowIfNull(wordstream);
+
         var wordCount = new Dictionary<string, int>();
         foreach (var word in wordstream)
         {
