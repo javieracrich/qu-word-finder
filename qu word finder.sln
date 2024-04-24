@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordFinder", "qu word finder\WordFinder.csproj", "{CD445C13-21E0-43B5-81EF-871696A1C2A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordFinder", "WordFinder\WordFinder.csproj", "{CD445C13-21E0-43B5-81EF-871696A1C2A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordFinder.Tests", "WordFinder.Tests\WordFinder.Tests.csproj", "{1A023B1F-30BD-4D7A-AC94-4F1CB53E1FF6}"
 EndProject

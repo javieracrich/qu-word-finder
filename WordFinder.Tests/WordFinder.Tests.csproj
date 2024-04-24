@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\qu word finder\WordFinder.csproj" />
+    <ProjectReference Include="..\WordFinder\WordFinder.csproj" />
   </ItemGroup>
 
   <ItemGroup>
