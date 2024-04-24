@@ -1,7 +1,7 @@
 # READ ME !!
-In order to demonstrate the code optimizations I made 2 methods:
-1. Find() (used as a baseline in the benchmarks)
-2. FindOptimized() (optimized version)
+In order to demonstrate the code optimizations I made 2 word finders:
+1. WordFinder (used as a baseline in the benchmarks)
+2. OptimizedWordFinder (optimized version)
 
 ## The solution has 3 projects.
 1. WordFinder: A library with the WordFinder and OptimizedWordFinder classes
@@ -18,14 +18,14 @@ In order to demonstrate the code optimizations I made 2 methods:
 
 
 
-## These are the benchmarks results for a 5x5 matrix.
+## These are the benchmarks for a 5x5 matrix.
 
 | Method        | Mean     | Error     | StdDev    | Ratio | Allocated | Alloc Ratio |
 |-------------- |---------:|----------:|----------:|------:|----------:|------------:|
 | Find          | 3.490 us | 0.0626 us | 0.0555 us |  1.00 |   5.59 KB |        1.00 |
 | FindOptimized | 1.178 us | 0.0234 us | 0.0219 us |  0.34 |   3.54 KB |        0.63 |
 
-## These are the benchmarks results for a 64x64 matrix.
+## These are the benchmarks for a 64x64 matrix.
 
 | Method        | Mean      | Error    | StdDev   | Ratio | Allocated  | Alloc Ratio |
 |-------------- |----------:|---------:|---------:|------:|-----------:|------------:|
@@ -35,5 +35,5 @@ In order to demonstrate the code optimizations I made 2 methods:
 
 # CONCLUSION
 From these results we can conclude:
--the optimized version runs in a 1/3 of the time and allocates 37% less memory in the small matrix 
--the optimized version runs in a 1/10 of the time and allocates 93% less memory in the big matrix.
+- the optimized version runs in a 1/3 of the time and allocates 37% less memory in the small matrix 
+- the optimized version runs in a 1/10 of the time and allocates 93% less memory in the big matrix.
